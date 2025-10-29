@@ -1,0 +1,10 @@
+import math
+n = int(input("Enter number of letters (for Playfair usually 25): "))
+fact_n = math.factorial(n)
+fact_n1 = math.factorial(n - 1)
+log2_n = math.log2(fact_n)
+log2_n1 = math.log2(fact_n1)
+print(f"Total possible keys = {fact_n}")
+print(f"≈ 2^{log2_n:.6f}")
+print(f"Effectively unique keys = {fact_n1}")
+print(f"≈ 2^{log2_n1:.6f}")
